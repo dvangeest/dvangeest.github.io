@@ -16,64 +16,175 @@
 </head>
 
 <body class="bg-light-pink">
-    <nav class="navbar navbar-expand-sm navbar-light bg-dark-pink">
-        <div class="container">
-            <a class="navbar-brand text-light" href="#">DJ</a>
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link text-light active" href="#" aria-current="page">Home <span
-                                class="visually-hidden">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#about">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link text-light dropdown-toggle" href="#work" id="dropdownId"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Work</a>
-                        <div class="dropdown-menu bg-dark-pink" aria-labelledby="dropdownId">
-                            <a class="dropdown-item text-light" href="#">Proj 1</a>
-                            <a class="dropdown-item text-light" href="#">Proj 2</a>
-                            <a class="dropdown-item text-light" href="#">Proj 3</a>
-                            <a class="dropdown-item text-light" href="#">Proj 4</a>
+    <main class="container-fluid p-0">
+        <section id="nav" class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-sm navbar-light bg-dark-pink">
+                    <div class="container">
+                        <a class="navbar-brand text-light" href="#">DJ</a>
+                        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavId">
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link text-light active" href="#" aria-current="page">Home <span
+                                            class="visually-hidden">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="#about">About</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-light dropdown-toggle" href="#work" id="dropdownId"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Work</a>
+                                    <div class="dropdown-menu bg-dark-pink" aria-labelledby="dropdownId">
+                                        <a class="dropdown-item text-light" href="#">Proj 1</a>
+                                        <a class="dropdown-item text-light" href="#">Proj 2</a>
+                                        <a class="dropdown-item text-light" href="#">Proj 3</a>
+                                        <a class="dropdown-item text-light" href="#">Proj 4</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="#contact">Contact</a>
+                                </li>
+
+                                <li class="nav-item d-flex justify-content-center align-content-center">
+                                    <a class="nav-link bi bi-github" href="https://github.com/dvangeest"
+                                        target="_blank"></a>
+                                </li>
+                            </ul>
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#contact">Contact</a>
-                    </li>
-
-                    <li class="nav-item d-flex justify-content-center align-content-center">
-                        <a class="nav-link bi bi-github" href="https://github.com/dvangeest" target="_blank"></a>
-                    </li>
-                </ul>
+                    </div>
+                </nav>
             </div>
-        </div>
-    </nav>
-
-
-    <main class="container-fluid">
-        <section id="home">
-
         </section>
 
-        <section id="about">
-
+        <section id="home" class="row vh-100 border-dark-pink">
+            <div class="col">
+                <h1 class="mt-5 pt-5 text-light">Transforming Ideas into Tomorrow's Reality</h1>
+            </div>
         </section>
 
-        <section id="work">
-
+        <section id="about" class="container-fluid vh-100 border-dark-pink">
+            <div class="row">
+                <div class="col-5">
+                    <img class="img-fluid" src="img/yae-miko-circle.webp" alt="">
+                </div>
+                <div class="col-1"></div>
+                <div class="col-5 text-light">
+                    <h2>ABOUT</h2>
+                    <p>
+                        I am Duncan, a 17 year old student from the Netherlands. I am currently studying at the ROC
+                        Mondriaan in
+                        The Hague. I am studying for a degree in Software Development. I am in my second year of the
+                        course. I
+                        am currently looking for an internship for the next school year. I am looking for an internship
+                        in the
+                        field of web development. I have experience with HTML, CSS, JavaScript, Lua, and PHP. I am also
+                        experienced with the Bootstrap framework.
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <section id="contact">
-            
+        <section id="work" class="container-fluid vh-100 border-dark-pink">
+            <div class="row">
+                <div class="col-5">
+                    <div class="row">
+                        <div class="col text-light">
+                            <h2>WORK</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <h3>Webcatalogus</h3>
+                            <img src="img/logo.png" class="img-fluid rounded" alt="">
+                        </div>
+
+                        <div class="col">
+                            <h3>Five in a row</h3>
+                            <img src="img/logo.png" class="img-fluid rounded" alt="">
+                        </div>
+
+                        <div class="col">
+                            <h3>Dashboard</h3>
+                            <img src="img/logo.png" class="img-fluid rounded" alt="">
+                        </div>
+
+                        <div class="col">
+                            <h3>Escape Room</h3>
+                            <img src="img/logo.png" class="img-fluid rounded" alt="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <h3>Higher Lower</h3>
+                            <img src="img/logo.png" class="img-fluid rounded" alt="">
+                        </div>
+
+                        <div class="col">
+                            <h3>Name</h3>
+                            <img src="img/logo.png" class="img-fluid rounded" alt="">
+                        </div>
+
+                        <div class="col">
+                            <h3>Name</h3>
+                            <img src="img/logo.png" class="img-fluid rounded" alt="">
+                        </div>
+
+                        <div class="col">
+                            <h3>Name</h3>
+                            <img src="img/logo.png" class="img-fluid rounded" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-5 text-light">
+                    <img class="img-fluid" src="img/hu-tao-circle.webp" alt="">
+                </div>
+            </div>
         </section>
 
-        <footer class="container">
+        <section id="contact" class="container-fluid vh-100 border-dark-pink">
+            <div class="row">
+                <div class="col-5">
+                    <img class="img-fluid" src="img/raiden-circle.webp" alt="">
+                </div>
+                <div class="col-1"></div>
+                <div class="col-5 text-light">
+                    <h2>CONTACT</h2>
+                    <div class="container">
+                        <div class="row">
+                            <div class="mb-3">
+                                <label for="" class="form-label">Email</label>
+                                <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
+                                    placeholder="abc@mail.com">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="mb-3">
+                                <label for="" class="form-label">Message</label>
+                                <input type="text" name="" id="" class="form-control py-4" placeholder=""
+                                    aria-describedby="helpId">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col mb-3">
+                                <button type="submit" class="btn btn-light">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="footer" class="container-fluid">
             <div class="row">
                 <div class="col-5"></div>
                 <img src="img/remram.gif" class="col-2 img-fluid img-rem" alt="">
@@ -95,7 +206,7 @@
                 <div class="col-4"></div>
                 <div class="col"></div>
             </div>
-        </footer>
+        </section>
     </main>
 
     <!-- Bootstrap JavaScript Libraries -->
