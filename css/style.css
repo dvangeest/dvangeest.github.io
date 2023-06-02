@@ -18,8 +18,29 @@
     background-color: #A2D2FF !important;
 }
 
-.border-dark-pink {    
+.border-dark-pink {
     box-shadow: inset 0px 0px 0px 10px #FFAFCC;
-    box-sizing: border-box; /* Include padding and border in element's */
+    box-sizing: border-box;
+    /* Include padding and border in element's */
 }
 
+
+@media (max-width: 575.98px) {
+    
+}
+
+@media (max-width: 767.98px) {
+
+}
+
+@media (max-width: 991.98px) {
+
+}
+
+@media (max-width: 1199.98px) {
+
+}
+
+@media (max-width: 1399.98px) {
+
+}
