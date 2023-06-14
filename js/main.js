@@ -1,3 +1,7 @@
+console.log('main.js loaded');
+
+const projectContainers = document.querySelectorAll('.project-container');
+
 const modalProjectData = [
     {
         title: 'Four in a Row',
@@ -99,3 +103,26 @@ const modalProjectData = [
         demo: '',
     },
 ]
+
+let projectDataIndex = 0
+for (let index = 0; index < projectContainers.length; index++) {
+    const projectContainer = projectContainers[index];
+    
+    for (let i = 0; i < 2; i++) {
+        const projectData = modalProjectData[projectDataIndex];
+
+        if (projectData === undefined) break;
+
+        projectContainer.innerHTML += `
+            <div class="card rounded btn btn-light" type="button" data-bs-toggle="modal"
+                data-bs-target="#modal${projectDataIndex}">
+                <img class="card-img-top h-100" src="${projectData.img}" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">${projectData.title}</h4>
+                </div>
+            </div>
+        `
+        
+        projectDataIndex++;
+    }
+}
