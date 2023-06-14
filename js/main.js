@@ -1,5 +1,5 @@
 console.log('main.js loaded');
-
+const headerContainer = document.querySelector('.navbar');
 const exampleModal = document.querySelector('.example-modal')
 const projectContainers = document.querySelectorAll('.project-container');
 
@@ -145,7 +145,15 @@ exampleModal.addEventListener('show.bs.modal', event => {
 
     const modalTitle = exampleModal.querySelector('.modal-title')
     const modalDescription = exampleModal.querySelector('.modal-description')
-    
+
     modalTitle.textContent = projectData.title
     modalDescription.innerHTML = projectData.description
-  })
+})
+
+window.addEventListener("scroll", function () {
+    if (window.pageYOffset < 0.2) {
+        headerContainer.classList.remove('solidify'); // remove solidify class to make header transparent
+    } else {
+        headerContainer.classList.add('solidify'); // add solidify class to make header solid
+    }
+});

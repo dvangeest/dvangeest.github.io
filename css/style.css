@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .bg-light-purple {
     background-color: #CD84DB !important;
 }
@@ -7,15 +11,15 @@
 }
 
 .bg-dark-pink {
-    background-color: #FFAFCC !important;
+    background-color: rgb(255, 175, 204) !important;
 }
 
 .bg-light-blue {
-    background-color: #BDE0FE !important;
+    background-color: rgb(189, 224, 254) !important;
 }
 
 .bg-dark-blue {
-    background-color: #A2D2FF !important;
+    background-color: rgb(162, 210, 255) !important;
 }
 
 .border-dark-pink {
@@ -26,4 +30,13 @@
 
 .vh-85 {
     height: 85vh;
+}
+
+.navbar {
+    transition: all .8s !important;
+    background: linear-gradient(360deg, rgba(184, 45, 96, 0) 20%, rgb(214, 124, 157, 1) 100%);
+}
+
+.solidify {
+    background: rgba(46, 47, 51, 0) !important;
 }
