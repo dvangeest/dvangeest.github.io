@@ -1,5 +1,6 @@
 console.log('main.js loaded');
 
+const exampleModal = document.querySelector('.example-modal')
 const projectContainers = document.querySelectorAll('.project-container');
 
 const modalProjectData = [
@@ -107,22 +108,44 @@ const modalProjectData = [
 let projectDataIndex = 0
 for (let index = 0; index < projectContainers.length; index++) {
     const projectContainer = projectContainers[index];
-    
+
     for (let i = 0; i < 2; i++) {
         const projectData = modalProjectData[projectDataIndex];
 
         if (projectData === undefined) break;
 
         projectContainer.innerHTML += `
-            <div class="card rounded btn btn-light" type="button" data-bs-toggle="modal"
-                data-bs-target="#modal${projectDataIndex}">
-                <img class="card-img-top h-100" src="${projectData.img}" alt="Card image cap">
+            <div class="card rounded btn btn-light type="button" data-bs-toggle="modal"
+                data-bs-target="#modal0" data-bs-index="${projectDataIndex}">
+                <img class="card-img-top h-100" src="${projectData.img}" alt="Card image">
                 <div class="card-body">
                     <h4 class="card-title">${projectData.title}</h4>
                 </div>
             </div>
         `
-        
+
+        // btn.addEventListener('click', () => {
+        //     console.log(projectData.title)
+
+        //     const modalTitle = exampleModal.querySelector('.modal-title')
+        //     const modalDescription = exampleModal.querySelector('.modal-description')
+
+        //     modalTitle.textContent = projectData.title
+        //     modalDescription.innerHTML = projectData.description
+        // })
+
         projectDataIndex++;
     }
 }
+
+exampleModal.addEventListener('show.bs.modal', event => {
+    const button = event.relatedTarget
+    const recipient = button.getAttribute('data-bs-index')
+    const projectData = modalProjectData[recipient];
+
+    const modalTitle = exampleModal.querySelector('.modal-title')
+    const modalDescription = exampleModal.querySelector('.modal-description')
+    
+    modalTitle.textContent = projectData.title
+    modalDescription.innerHTML = projectData.description
+  })
