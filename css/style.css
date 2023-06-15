@@ -3,11 +3,11 @@ body {
 }
 
 .bg-light-purple {
-    background-color: #CD84DB !important;
+    background-color: rgb(205, 132, 219) !important;
 }
 
 .bg-light-pink {
-    background-color: #FFC8DD !important;
+    background-color: rgb(255, 200, 221) !important;
 }
 
 .bg-dark-pink {
@@ -20,6 +20,14 @@ body {
 
 .bg-dark-blue {
     background-color: rgb(162, 210, 255) !important;
+}
+
+.text-light-blue {
+    color: rgb(189, 224, 254) !important;
+}
+
+.text-dark-blue {
+    color: #A2D2FF  !important;
 }
 
 .border-dark-pink {
