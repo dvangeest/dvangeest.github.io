@@ -115,9 +115,9 @@ for (let index = 0; index < projectContainers.length; index++) {
         if (projectData === undefined) break;
 
         projectContainer.innerHTML += `
-            <div class="card rounded btn btn-light type="button" data-bs-toggle="modal"
+            <div class="card rounded btn btn-info bg-light-purple text-light" type="button" data-bs-toggle="modal"
                 data-bs-target="#modal0" data-bs-index="${projectDataIndex}">
-                <img class="card-img-top h-100" src="${projectData.img}" alt="Card image">
+                <img class="card-img-top img-fluid" src="${projectData.img}" alt="Card image">
                 <div class="card-body">
                     <h4 class="card-title">${projectData.title}</h4>
                 </div>
@@ -150,10 +150,3 @@ exampleModal.addEventListener('show.bs.modal', event => {
     modalDescription.innerHTML = projectData.description
 })
 
-window.addEventListener("scroll", function () {
-    if (window.pageYOffset < 0.2) {
-        headerContainer.classList.remove('solidify'); // remove solidify class to make header transparent
-    } else {
-        headerContainer.classList.add('solidify'); // add solidify class to make header solid
-    }
-});
