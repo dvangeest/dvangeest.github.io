@@ -195,6 +195,8 @@ document.addEventListener('DOMContentLoaded', () => {
     allLinks.forEach((link) => {
         link.addEventListener('click', (event) => {
             const target = link.getAttribute('href');
+            if (target === '#') return;
+
             const targetSection = document.getElementById(target.replace('#', ''));
             const targetSectionPos = targetSection.getAttribute('scroll-pos');
 
