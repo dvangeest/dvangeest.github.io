@@ -3,7 +3,7 @@ body {
 }
 
 .bg-light-purple {
-    background-color: rgb(205, 132, 219) !important;
+    background-color: rgb(205, 132, 219) ;
 }
 
 .bg-light-pink {
@@ -11,7 +11,7 @@ body {
 }
 
 .bg-dark-pink {
-    background-color: rgb(255, 175, 204) !important;
+    background-color: rgb(255, 175, 204) ;
 }
 
 .bg-light-blue {
@@ -30,6 +30,10 @@ body {
     color: #A2D2FF  !important;
 }
 
+.text-light-purple {
+    color: rgb(205, 132, 219) !important;
+}
+
 .border-dark-pink {
     box-shadow: inset 0px 0px 0px 10px #FFAFCC;
     box-sizing: border-box;
@@ -40,11 +44,10 @@ body {
     height: 85vh;
 }
 
-.navbar {
-    transition: all .8s !important;
-    background: linear-gradient(360deg, rgba(184, 45, 96, 0) 20%, rgb(214, 124, 157, 1) 100%);
+.header-container {
+    transition: all 0.5s ease-in-out !important;
 }
 
-.solidify {
-    background: rgba(46, 47, 51, 0) !important;
+.hide {
+    opacity: 0;
 }

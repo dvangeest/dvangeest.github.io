@@ -1,5 +1,5 @@
 console.log('main.js loaded');
-const headerContainer = document.querySelector('.navbar');
+const headerContainer = document.querySelector('.header-container');
 const exampleModal = document.querySelector('.example-modal')
 const projectContainers = document.querySelectorAll('.project-container');
 
@@ -149,4 +149,24 @@ exampleModal.addEventListener('show.bs.modal', event => {
     modalTitle.textContent = projectData.title
     modalDescription.innerHTML = projectData.description
 })
+
+let lastKnownScrollPosition = window.scrollY;;
+document.addEventListener("scroll", (event) => {
+    //check if lastKnownScrollPosition is greater than the current scroll position
+    if (lastKnownScrollPosition > window.scrollY) {
+        //scrolling up
+
+        console.log('scrolling up')
+
+        headerContainer.classList.remove('hide')
+    } else {
+        //scrolling down
+
+        console.log('scrolling down')
+
+        headerContainer.classList.add('hide')
+    }
+
+    lastKnownScrollPosition = window.scrollY;
+});
 
