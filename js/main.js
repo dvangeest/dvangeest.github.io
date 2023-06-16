@@ -1,4 +1,7 @@
 console.log('main.js loaded');
+
+const root = document.querySelector(':root');
+
 const headerContainer = document.querySelector('.header-container');
 const exampleModal = document.querySelector('.example-modal')
 const projectContainers = document.querySelectorAll('.project-container');
@@ -106,6 +109,14 @@ const modalProjectData = [
 ]
 
 let projectDataIndex = 0
+
+root.setAttribute('style', 'scroll-behavior: auto;')
+setTimeout(function () {
+    window.scrollBy(0, -2000);
+
+    root.removeAttribute("style");
+}, 0)
+
 for (let index = 0; index < projectContainers.length; index++) {
     const projectContainer = projectContainers[index];
 
@@ -169,4 +180,37 @@ document.addEventListener("scroll", (event) => {
 
     lastKnownScrollPosition = window.scrollY;
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Smooth scrolling when a link is clicked
+    const allSections = document.querySelectorAll('section');
+    const allLinks = document.querySelectorAll('a[href^="#"]');
+    allSections.forEach((section) => {
+        section.setAttribute('scroll-pos', section.offsetTop);
+
+        console.log(section.offsetTop)
+    });
+
+    allLinks.forEach((link) => {
+        link.addEventListener('click', (event) => {
+            const target = link.getAttribute('href');
+            const targetSection = document.getElementById(target.replace('#', ''));
+            const targetSectionPos = targetSection.getAttribute('scroll-pos');
+
+            event.preventDefault();
+
+            window.scrollTo({
+                top: targetSectionPos,
+                behavior: 'smooth',
+            });
+        });
+    });
+});
+
+
+
+
+
+
 
