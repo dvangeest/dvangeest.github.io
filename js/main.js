@@ -1,5 +1,3 @@
-console.log('main.js loaded');
-
 const root = document.querySelector(':root');
 
 const headerContainer = document.querySelector('.header-container');
@@ -133,23 +131,13 @@ for (let index = 0; index < projectContainers.length; index++) {
                     <h4 class="card-title">${projectData.title}</h4>
                 </div>
             </div>
-        `
-
-        // btn.addEventListener('click', () => {
-        //     console.log(projectData.title)
-
-        //     const modalTitle = exampleModal.querySelector('.modal-title')
-        //     const modalDescription = exampleModal.querySelector('.modal-description')
-
-        //     modalTitle.textContent = projectData.title
-        //     modalDescription.innerHTML = projectData.description
-        // })
+        `;
 
         projectDataIndex++;
     }
 }
 
-exampleModal.addEventListener('show.bs.modal', event => {
+exampleModal.addEventListener('show.bs.modal', (event) => {
     const button = event.relatedTarget
     const recipient = button.getAttribute('data-bs-index')
     const projectData = modalProjectData[recipient];
@@ -166,16 +154,10 @@ document.addEventListener("scroll", (event) => {
     //check if lastKnownScrollPosition is greater than the current scroll position
     if (lastKnownScrollPosition > window.scrollY) {
         //scrolling up
-
-        console.log('scrolling up')
-
-        headerContainer.classList.remove('hide')
+        headerContainer.classList.remove('hide');
     } else {
         //scrolling down
-
-        console.log('scrolling down')
-
-        headerContainer.classList.add('hide')
+        headerContainer.classList.add('hide');
     }
 
     lastKnownScrollPosition = window.scrollY;
@@ -188,8 +170,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const allLinks = document.querySelectorAll('a[href^="#"]');
     allSections.forEach((section) => {
         section.setAttribute('scroll-pos', section.offsetTop);
-
-        console.log(section.offsetTop)
     });
 
     allLinks.forEach((link) => {
