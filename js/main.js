@@ -30,9 +30,9 @@ const modalProjectData = [
         repo: 'https://github.com/ROCMondriaanTIN/sd22-project-p02-boter-kaas-en-eieren-dvangeest.git',
         demo: 'pages/projects/four-in-a-row/index.html',
         thumbnails: [
+            'img/four-in-a-row-0.png',
             'img/four-in-a-row-1.png',
             'img/four-in-a-row-2.png',
-            'img/four-in-a-row-3.png',
         ],
     },
     {
@@ -57,6 +57,11 @@ const modalProjectData = [
         img: 'img/steaming-service.jpeg',
         repo: 'https://github.com/ROCMondriaanTIN/sd22-themaweek-2-t1k-dvangeest.git',
         demo: 'pages/projects/streaming-service/index.html',
+        thumbnails: [
+            'img/streaming-service-0.jpg',
+            'img/streaming-service-1.jpg',
+            'img/streaming-service-2.png',
+        ],
     },
     {
         title: 'Attack on Titan: Evolution (Roblox)',
@@ -75,6 +80,11 @@ const modalProjectData = [
         `,
         img: 'img/aote-banner.png',
         demo: 'https://www.roblox.com/games/7127407851/',
+        thumbnails: [
+            'img/aot-0.jpg',
+            'img/aot-1.png',
+            'img/aot-2.jpg',
+        ],
     },
     {
         title: 'Uno (Roblox)',
@@ -109,6 +119,11 @@ const modalProjectData = [
         img: 'img/escape-room.jpeg',
         repo: 'https://github.com/dvangeest/escape-room.git',
         demo: 'pages/projects/escape-room/index.html',
+        thumbnails: [
+            'img/escape-room-0.jpeg',
+            'img/escape-room-1.jpeg',
+            'img/escape-room-2.png',
+        ],
     },
     {
         title: 'Old Portfolio',
