@@ -29,6 +29,11 @@ const modalProjectData = [
         img: 'img/four-in-a-row.png',
         repo: 'https://github.com/ROCMondriaanTIN/sd22-project-p02-boter-kaas-en-eieren-dvangeest.git',
         demo: 'pages/projects/four-in-a-row/index.html',
+        thumbnails: [
+            'img/four-in-a-row-1.png',
+            'img/four-in-a-row-2.png',
+            'img/four-in-a-row-3.png',
+        ],
     },
     {
         title: 'Streaming Service',
@@ -181,6 +186,7 @@ exampleModal.addEventListener('show.bs.modal', (event) => {
     const modalDescription = exampleModal.querySelector('.modal-description')
     const modalPlayBtn = exampleModal.querySelector('.modal-play-btn')
     const modalRepoBtn = exampleModal.querySelector('.modal-repo-btn')
+    const modalCarousel = exampleModal.querySelector('.modal-carousel')
 
     if (projectData.demo === undefined) {
         modalPlayBtn.classList.add('d-none');
@@ -194,6 +200,28 @@ exampleModal.addEventListener('show.bs.modal', (event) => {
     } else {
         modalRepoBtn.classList.remove('d-none');
         modalRepoBtn.setAttribute('href', projectData.repo);
+    }
+
+
+
+    if (projectData.thumbnails === undefined) {
+        modalCarousel.classList.add('d-none');
+    } else {
+        for (let index = 0; index < 2; index++) {
+            const carouselImgElement = exampleModal.querySelector(`.modal-img-${index}`)
+
+            carouselImgElement.classList.add('d-none');
+        }
+
+        modalCarousel.classList.remove('d-none');
+
+        for (let index = 0; index < projectData.thumbnails.length; index++) {
+            const thumbnailImg = projectData.thumbnails[index];
+            const carouselImgElement = exampleModal.querySelector(`.modal-img-${index}`)
+
+            carouselImgElement.setAttribute('src', thumbnailImg);
+            carouselImgElement.classList.remove('d-none');
+        }
     }
 
     modalTitle.textContent = projectData.title
