@@ -29,6 +29,7 @@ redirectElements.forEach(element => {
     element.addEventListener('click', () => {
         transitionOut();
         setTimeout(() => {
+            //redirect="pages/login.html" also consider in the current directory
             location.href = element.getAttribute('redirect');
         }, 500);
     })

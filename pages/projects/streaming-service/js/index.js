@@ -78,5 +78,5 @@ loginBtn.addEventListener('click', () => {
 
     alert('Account created successfully!');
 
-    location.href = '../pages/login.html';
+    location.href = 'pages/login.html';
 })
