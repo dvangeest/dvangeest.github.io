@@ -145,6 +145,11 @@ const modalProjectData = [
         img: 'img/old-portfolio.png',
         repo: 'https://github.com/ROCMondriaanTIN/sd22-design-p2-portfolio-dvangeest.git',
         demo: 'pages/projects/old-portfolio/index.html',
+        thumbnails: [
+            'img/old-portfolio-0.png',
+            'img/old-portfolio-1.png',
+            'img/old-portfolio-2.png',
+        ],
     },
     {
         title: 'Higher Lower',
@@ -158,6 +163,11 @@ const modalProjectData = [
         img: 'img/higher-lower.png',
         repo: 'https://github.com/dvangeest/higher-lower.git',
         demo: 'pages/projects/higher-lower/index.html',
+        thumbnails: [
+            'img/higher-lower-0.png',
+            'img/higher-lower-1.png',
+            'img/higher-lower-2.png',
+        ],
     },
 ]
 
