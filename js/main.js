@@ -108,9 +108,19 @@ const modalProjectData = [
     {
         title: 'Old Portfolio',
         description: `
-            I created my first portfolio website using HTML, CSS, and JavaScript. The website showcased my skills in web development and design, providing a visually appealing and intuitive user experience.
-            <br><br>
-            The website featured a responsive design, allowing users to access the website on any device.
+        The Old Portfolio project was a personal endeavor where I created a simple and responsive portfolio website using HTML, CSS, and JavaScript. The purpose of this project was to showcase my work and skills in web development at that time.
+        <br><br>
+        The website followed a straightforward page structure, consisting of sections such as Home, Projects, About, and Contact. Each section was accessible through a navigation menu, which featured buttons with hover events to provide visual feedback and enhance user interaction. The hover events added a touch of interactivity to the portfolio, making the buttons more engaging for visitors.
+        <br><br>
+        To ensure a responsive design, I implemented a grid layout on the wrapper element of the website. This allowed the content to adapt and rearrange automatically based on different screen sizes and devices. The responsive grid layout made the portfolio accessible and visually appealing across various devices, including desktops, tablets, and mobile phones.
+        <br><br>
+        At the time of developing this old portfolio, I had three projects showcased on the Projects page. Each project was presented with a brief description, relevant images, and links to view more details or visit the live project. The layout and styling of the project section followed a simple blue-green-light blue color scheme, creating a cohesive and visually pleasing aesthetic.
+        <br><br>
+        Additionally, the portfolio included sections like About and Contact, where I provided information about myself and ways to get in touch. These sections were designed to be concise and informative, allowing visitors to learn more about me and easily connect if they were interested.
+        <br><br>
+        Throughout the development process, I utilized CSS transitions to add smooth animations and visual effects, enhancing the overall user experience. The responsive navbar for mobile devices ensured that visitors on smaller screens could easily navigate through the different sections of the portfolio.
+        <br><br>
+        In summary, the Old Portfolio project served as a representation of my skills and projects at that time. Using HTML, CSS, and JavaScript, I created a simple yet responsive portfolio website with a clear page structure, hover events, grid layout for responsiveness, and a visually appealing color scheme. This project allowed me to showcase my abilities in web development and design, and it provided a solid foundation for future iterations and improvements in my portfolio.
         `,
         img: 'img/old-portfolio.png',
         repo: 'https://github.com/ROCMondriaanTIN/sd22-design-p2-portfolio-dvangeest.git',
