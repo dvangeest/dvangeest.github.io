@@ -33,15 +33,21 @@ const modalProjectData = [
     {
         title: 'Streaming Service',
         description: `
-        For my solo school project, I created a streaming service website within a week. The website allowed users to create an account, log in, and browse a library of shows for streaming. Due to limitations, the actual streaming functionality was simulated using placeholder videos instead of sourcing real shows.
+        The Streaming Service project was a school-assigned task that allowed freedom in choosing the project scope as long as it could be completed within a week. The website was inspired by popular streaming platforms like Netflix and Zoro.to, and aimed to provide users with a seamless streaming experience. The project was developed using HTML, CSS, and JavaScript, incorporating various methods and techniques to create a user-friendly and visually appealing streaming service.
         <br><br>
-        I developed the project using HTML, CSS, and JavaScript, showcasing my proficiency in these web technologies. The user interface was carefully designed to provide a visually appealing and intuitive experience. I focused on optimizing the navigation flow and ensuring a seamless user journey throughout the website.
+        Upon entering the website for the first time, users were prompted to create an account, while returning users had the option to log in. The user account information was stored in the browser's local storage, enabling personalized experiences across sessions. Users were able to create multiple profiles, similar to Netflix, and customize their profile icons using the keyboard.
         <br><br>
-        To handle user accounts, I implemented a login system using JavaScript, where user information was securely stored in the browser's local storage. As a result, the login functionality did not send data to a server but provided a simulated user authentication experience.
+        After logging in, users were directed to the Discover page, which served as the landing page for exploring available shows. The top-ranked show was prominently highlighted as a big card, grabbing users' attention. Below the highlighted show, users could find various categories such as Trending, Top Airing, and more. These categories were dynamically displayed using JavaScript and local storage, ensuring an up-to-date and customizable experience for users.
         <br><br>
-        Given the time constraints, I prioritized essential features and functionalities to deliver a functional website within the given timeframe. The project demonstrated my ability to work independently and create a streaming service website, complete with user account functionality.
+        When users clicked on a show, an overlay transitioned onto the Discover page, providing detailed information about the show, including its description, title, genres, studio, producer, and total episodes. This overlay was created using HTML, CSS transitions, and JavaScript, allowing users to get a glimpse of the show's content without leaving the Discover page.
         <br><br>
-        Overall, this solo project highlighted my proficiency in HTML, CSS, and JavaScript, as well as my ability to develop a streaming service website with user account management. While actual streaming was not available, the project provided users with an immersive experience using placeholder videos and showcased my skills in web development and rapid project execution.
+        Upon selecting the play button, users were redirected to the video player page. The video player page featured a placeholder video, comments section, episodes list, and information about the specific season and episode. The video player and its functionalities were implemented using JavaScript, providing users with a seamless streaming experience within the website.
+        <br><br>
+        Throughout the project, various techniques were utilized to enhance the user experience. CSS transitions were applied to create smooth animations and visual effects, adding polish to the overall website design. Grid layouts were implemented on the wrapper element to ensure responsiveness across different screen sizes, allowing users to enjoy the streaming service on various devices.
+        <br><br>
+        Although the project focused on local storage and did not involve an actual web server, it provided an opportunity to explore the cosmetic aspects of building a streaming service website. By implementing user accounts, profile customization, show discovery, and a video player, the project simulated the core functionalities of a streaming platform.
+        <br><br>
+        Overall, this project allowed me to apply HTML, CSS, and JavaScript to create a user-friendly streaming service website. It provided valuable experience in using local storage for personalized user accounts, implementing responsive grid layouts, creating interactive overlays, and developing a video player. Through this project, I deepened my understanding of front-end web development and gained insights into the complexities of building a streaming service platform.
         `,
         img: 'img/steaming-service.jpeg',
         repo: 'https://github.com/ROCMondriaanTIN/sd22-themaweek-2-t1k-dvangeest.git',
