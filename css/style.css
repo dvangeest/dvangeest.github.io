@@ -37,7 +37,6 @@ body {
 .border-dark-pink {
     box-shadow: inset 0px 0px 0px 10px #FFAFCC;
     box-sizing: border-box;
-    /* Include padding and border in element's */
 }
 
 .vh-85 {

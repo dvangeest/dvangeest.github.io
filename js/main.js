@@ -16,7 +16,7 @@ const modalProjectData = [
         `,
         img: 'img/four-in-a-row.png',
         repo: 'https://github.com/ROCMondriaanTIN/sd22-project-p02-boter-kaas-en-eieren-dvangeest.git',
-        demo: '',
+        demo: 'pages/projects/four-in-a-row/index.html',
     },
     {
         title: 'Streaming Service',
@@ -33,7 +33,7 @@ const modalProjectData = [
         `,
         img: 'img/steaming-service.jpeg',
         repo: 'https://github.com/ROCMondriaanTIN/sd22-themaweek-2-t1k-dvangeest.git',
-        demo: '',
+        demo: 'pages/projects/streaming-service/index.html',
     },
     {
         title: 'Attack on Titan: Evolution (Roblox)',
@@ -78,7 +78,7 @@ const modalProjectData = [
         `,
         img: 'img/escape-room.jpeg',
         repo: 'https://github.com/dvangeest/escape-room.git',
-        demo: '',
+        demo: 'pages/projects/escape-room/index.html',
     },
     {
         title: 'Old Portfolio',
@@ -89,7 +89,7 @@ const modalProjectData = [
         `,
         img: 'img/old-portfolio.png',
         repo: 'https://github.com/ROCMondriaanTIN/sd22-design-p2-portfolio-dvangeest.git',
-        demo: '',
+        demo: 'pages/projects/old-portfolio/index.html',
     },
     {
         title: 'Higher Lower',
@@ -102,7 +102,7 @@ const modalProjectData = [
         `,
         img: 'img/higher-lower.png',
         repo: 'https://github.com/dvangeest/higher-lower.git',
-        demo: '',
+        demo: 'pages/projects/higher-lower/index.html',
     },
 ]
 
@@ -144,6 +144,22 @@ exampleModal.addEventListener('show.bs.modal', (event) => {
 
     const modalTitle = exampleModal.querySelector('.modal-title')
     const modalDescription = exampleModal.querySelector('.modal-description')
+    const modalPlayBtn = exampleModal.querySelector('.modal-play-btn')
+    const modalRepoBtn = exampleModal.querySelector('.modal-repo-btn')
+
+    if (projectData.demo === undefined) {
+        modalPlayBtn.classList.add('d-none');
+    } else {
+        modalPlayBtn.classList.remove('d-none');
+        modalPlayBtn.setAttribute('href', projectData.demo);
+    }
+
+    if (projectData.repo === undefined) {
+        modalRepoBtn.classList.add('d-none');
+    } else {
+        modalRepoBtn.classList.remove('d-none');
+        modalRepoBtn.setAttribute('href', projectData.repo);
+    }
 
     modalTitle.textContent = projectData.title
     modalDescription.innerHTML = projectData.description
