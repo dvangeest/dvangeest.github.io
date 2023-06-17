@@ -88,12 +88,19 @@ const modalProjectData = [
     {
         title: 'Escape Room',
         description: `
-        In a group project with two classmates, we developed a captivating 2D Escape Room web game using HTML, CSS, and JavaScript. 
+        The Escape Room project was a collaborative effort among myself and two classmates, where we developed an immersive 2D web game using HTML, CSS, and JavaScript. Inspired by the anime "Death Parade," the game aimed to provide players with a captivating storyline, visually appealing graphics, and challenging puzzles. Throughout the development process, we utilized various methods and techniques to create an engaging and immersive escape room experience.
         <br><br>
-        Inspired by the anime "Death Parade," the game featured a compelling storyline and immersive visuals. 
+        Upon entering the game, players were welcomed into the quindecim, a virtual bar setting, where they encountered the bartender character, Decim. Decim explained the situation and outlined the game's rules and circumstances. These instructions included important details such as the inability to know the location, the upcoming game, the availability of five lives, the stake of lives in the game, and the restriction from leaving the bar until the game's completion. This narrative setup added suspense and intrigue, immersing players in the game's atmosphere.
         <br><br>
-        Players had to solve puzzles and riddles to progress through the narrative and escape the room. Our collaboration showcased our skills in web development and storytelling, creating an engaging experience for players.
-        `,
+        The gameplay revolved around solving puzzles and riddles to progress through the narrative and escape the room. The first puzzle challenged players to decipher a password by using provided colors and their corresponding priorities. For example, green had the highest priority (1), followed by red (2), blue (3), orange (4), grey (5), and yellow (6). By understanding the color-priority relationship, players needed to input the correct code sequence to advance. This puzzle tested players' observation and logical thinking skills.
+        <br><br>
+        The second puzzle introduced a 3x3 grid that players had to solve by moving puzzle pieces around until they formed a complete picture. This grid puzzle required strategic thinking and spatial awareness, challenging players to rearrange the pieces in the correct order to progress further in the game.
+        <br><br>
+        The final puzzle presented a riddle that required players to find a 10-digit number. Each digit represented the count of a specific number in the entire sequence. For instance, the first digit represented the count of zeros, the second digit represented the count of ones, and so on, until the tenth digit represented the count of nines. Players had to analyze and solve the riddle to identify the correct number sequence.
+        <br><br>
+        Our collaborative effort in developing this escape room web game showcased our skills in web development and storytelling. We effectively utilized HTML, CSS, and JavaScript to create an engaging and interactive experience for players. The game's visual elements, animations, and user interactions were enhanced through CSS transitions, click events, hover events, and grid layouts. Local storage was utilized to store and retrieve game progress, allowing players to continue their adventure from where they left off.
+        <br><br>
+        Overall, this project provided us with valuable experience in designing and implementing a captivating escape room game using HTML, CSS, and JavaScript. Through our collaboration, we strengthened our web development skills, honed our problem-solving abilities, and demonstrated our ability to create an immersive and enjoyable gaming experience for players.`,
         img: 'img/escape-room.jpeg',
         repo: 'https://github.com/dvangeest/escape-room.git',
         demo: 'pages/projects/escape-room/index.html',
