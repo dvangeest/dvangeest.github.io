@@ -1,0 +1,341 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #1f2041;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 40px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 40px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        "hd hd hd hd hd hd hd hd hd hd hd hd"
+        ". . . . . . . . . . . ."
+        ". . . mn mn mn mn mn mn . . ."
+        ". . . mn mn mn mn mn mn . . ."
+        ". . . mn mn mn mn mn mn . . ."
+        ". . . mn mn mn mn mn mn . . ."
+        ". . . mn mn mn mn mn mn . . ."
+        ". . . . . . . . . . . ."
+        ". . . . . . . . . . . ."
+        ". . . . . . . . . . . ."
+        ". . . . . . . . . . . ."
+        "ft ft ft ft ft ft ft ft ft ft ft ft";
+}
+
+.header {
+    background-color: #4D6CFA;
+    grid-area: hd;
+    height: 40px;
+    z-index: 4.5;
+}
+
+.nav {
+    width: 95vw;
+    justify-content: left;
+    gap: 5vw;
+}
+
+.main {
+    grid-area: mn;
+}
+
+a {
+    transition: all, .5s;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-weight: 350;
+    color: white;
+}
+
+a:hover {
+    text-align: center;
+    background-color: #adbbf7;
+
+    padding: 1vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+
+    border-radius: 5%;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 60px;
+    font-family: sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+.top-text {
+    color: #09BC8A;
+    text-align: center;
+    margin: 20px;
+    flex-direction: column;
+}
+
+.redirects {
+    width: 25vw;
+    margin: auto;
+}
+
+.redirects>a {
+    color: #4D6CFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    font-size: 20px;
+}
+
+.pillar {
+    position: absolute;
+    background-color: #09BC8A;
+    height: 35vh;
+    width: 5vw;
+    z-index: 5;
+}
+
+.decorations> :nth-child(1) {
+    left: 92vw;
+    transform: rotate(180deg);
+}
+
+.decorations> :nth-child(2) {
+    left: 4vw;
+    top: 65vh;
+    position: fixed;
+}
+
+.pillar>.top {
+    height: 5vw;
+    width: 100%;
+
+    border-radius: 50%;
+    background-color: #09BC8A;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ball {
+    height: 4vw;
+    width: 4vw;
+
+    background-color: #09BC8A;
+    border-radius: 50%;
+
+    z-index: 25;
+
+    left: 50%;
+    top: -5.5vw;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.tiny {
+    height: 2.5vw;
+    width: 2.5vw;
+
+    z-index: 30;
+    background-color: #09BC8A;
+
+    top: -10vw;
+}
+
+.desc-container {
+    margin: 12px;
+}
+
+.desc-title {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 6px;
+}
+
+img {
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.about-me-text {
+    width: 50vw;
+    height: 25vh;
+}
+
+.project-container {
+    border: 1px solid #09BC8A;
+    margin: 10px;
+    flex-direction: column;
+    width: 25vw;
+}
+
+.project-container>p {
+    width: 70%;
+}
+
+.project-container h2 {
+    font-size: 40px;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.show {
+    display: block;
+}
+
+.menu-container {
+    display: none;
+}
+
+.menu-overlay {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 40px;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(3, 19, 49, 0.95);
+}
+
+.show {
+    display: block;
+}
+
+.menu-nav {
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.menu-nav a {
+    height: 30px;
+}
+
+.listing {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5vh;
+}
+
+.listing li {
+    width: 25vw;
+}
+
+@media only screen and (max-width: 650px) {
+    .wrapper {
+        grid-template-areas:
+            "hd hd hd hd hd hd hd hd hd hd hd hd"
+
+            ". . . . . . . . . . . ."
+            ". . mn mn mn mn mn mn mn mn . ."
+            ". . mn mn mn mn mn mn mn mn . ."
+            ". . mn mn mn mn mn mn mn mn . ."
+            ". . mn mn mn mn mn mn mn mn . ."
+            ". . mn mn mn mn mn mn mn mn . ."
+            ". . . . . . . . . . . ."
+            ". . . . . . . . . . . ."
+            ". . . . . . . . . . . ."
+
+            "ft ft ft ft ft ft ft ft ft ft ft ft";
+    }
+
+    .nav>a {
+        display: none;
+    }
+
+    .nav {
+        width: 85vw;
+    }
+
+    .menu-container {
+        display: inline-block;
+    }
+
+    .project-container p {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 950px) {
+    .wrapper {
+        grid-template-areas:
+            "hd hd hd hd hd hd hd hd hd hd hd hd"
+            ". . . . . . . . . . . ."
+            ". mn mn mn mn mn mn mn mn mn mn ."
+            ". mn mn mn mn mn mn mn mn mn mn ."
+            ". mn mn mn mn mn mn mn mn mn mn ."
+            ". mn mn mn mn mn mn mn mn mn mn ."
+            ". mn mn mn mn mn mn mn mn mn mn ."
+            ". . . . . . . . . . . ."
+            ". . . . . . . . . . . ."
+            ". . . . . . . . . . . ."
+            "ft ft ft ft ft ft ft ft ft ft ft ft";
+    }
+
+    .listing {
+        flex-direction: column;
+    }
+
+    .listing li {
+        width: 70vw;
+    }
+
+    .project-container {
+        width: 55vw;
+    }
+}
