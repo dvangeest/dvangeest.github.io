@@ -8,11 +8,23 @@ const modalProjectData = [
     {
         title: 'Four in a Row',
         description: `
-            I created a challenging version of Tic Tac Toe called "Four in a Row" using HTML, CSS, and JavaScript.
-            <br><br>
-            Originally designed for Player vs. Player, I added an AI opponent for a higher grade. The computer's moves were randomized, making the game unpredictable and engaging.
-            <br><br>
-            The interface was user-friendly, displaying the current player's turn, name and the game result. It was an opportunity to showcase my skills in web development and strategic thinking.
+        The Four in a Row project was initially a school-assigned task, inspired by the classic game of Tic-Tac-Toe but with an added challenge of achieving four consecutive markers in a row. This project was developed using HTML, CSS, and JavaScript, combining various techniques and methods to create an engaging and interactive gaming experience.
+        <br><br>
+        Upon entering the page, users were greeted with a form to insert their username, which was then stored in the browser's local storage. This feature ensured that the username would persist across sessions and be displayed on the actual game page, providing a personalized touch for the players.
+        <br><br>
+        The game page featured a 7x7 grid layout, created using HTML and CSS Grid. This grid served as the playing field for the Four in a Row game, allowing users to strategically place their "X" markers. The use of CSS transitions provided smooth and animated effects during gameplay, enhancing the overall user experience.
+        <br><br>
+        To facilitate user interaction, the project employed hover events and click events in JavaScript. These events allowed players to preview their moves by highlighting the respective row when hovering over it and to make their selection by clicking on the desired row. This interactivity provided visual feedback, aiding users in making informed decisions.
+        <br><br>
+        The primary objective of the game was to achieve four markers in a row. JavaScript logic was implemented to detect and validate winning conditions, ensuring that the game accurately determined a winner. Upon successful completion, players were presented with a winner screen, displaying a congratulatory message and providing options to play again or return to the main menu.
+        <br><br>
+        In addition to the user-player experience, the project incorporated an automated AI opponent. The AI opponent randomly placed its markers on a tile within the grid, providing a challenging element to the game. This feature was implemented using JavaScript and allowed users to play against the computer when desired.
+        <br><br>
+        Throughout the project, I gained valuable knowledge and skills in web development. I learned to utilize local storage to store user information, ensuring a personalized experience. Additionally, I gained proficiency in working with viewport sizes, hover events, click events, and animated CSS transitions, which enhanced the visual appeal and interactivity of the game.
+        <br><br>
+        The project also deepened my understanding of grid layout, allowing me to create dynamic and responsive game boards. Furthermore, I developed logic and algorithms to handle winning conditions and implement an AI opponent, further expanding my problem-solving capabilities.
+        <br><br>
+        Overall, this project served as an opportunity for me to apply HTML, CSS, and JavaScript to create an engaging and interactive Four in a Row game. It provided me with hands-on experience in web development techniques, taught me the significance of user experience, and expanded my knowledge of JavaScript functionalities. The project fostered my growth as a software developer and prepared me for future challenges in building dynamic web applications.
         `,
         img: 'img/four-in-a-row.png',
         repo: 'https://github.com/ROCMondriaanTIN/sd22-project-p02-boter-kaas-en-eieren-dvangeest.git',
