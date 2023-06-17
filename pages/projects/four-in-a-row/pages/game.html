@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game - Four In A Row</title>
+    <link rel="stylesheet" href="../css/mystyle.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="center">
+            <div class="title-background center rounded-corner aqua">
+                <div class="title-container rounded-corner darkblue">
+                    <h2>
+                        Four In A Row <br>
+                    </h2>
+
+                    <h3 class="turn-text">
+                        Turn: Player 1
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="board-container center rounded-corner yellow">
+                <div class="board">
+                    <div title="row1" class="row">
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                    </div>
+
+                    <div title="row2" class="row">
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                    </div>
+
+                    <div title="row3" class="row">
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                    </div>
+
+                    <div title="row4" class="row">
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                    </div>
+
+                    <div title="row5" class="row">
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                    </div>
+
+                    <div title="row6" class="row">
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                    </div>
+
+                    <div title="row7" class="row">
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="player-container center">
+                <div class="player-card rounded-corner center darkblue">
+                    <p class="username-textlabel">Player 1</p>
+                </div>
+                <img class="arrow" src="../imgs/arrow.png" alt="arrow">
+                <div class="player-card rounded-corner center darkblue">
+                    <p>A.I.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="pop-up-container center">
+            <div class="pop-up rounded-corner">
+                <h3 class="pop-up-text">You lost...</h3>
+                <img class="rounded-corner pop-up-image" src="../imgs/munching.png" alt="winner pic">
+                <p class="play-again rounded-corner darkblue">Play Again</p>
+                <p class="exit-menu rounded-corner darkblue">Exit to Menu</p>
+            </div>
+        </div>
+    
+        <audio class="background-audio" src="../sounds/background.mp3" ></audio>
+        <audio class="hover-audio" src="../sounds/hover.mp3"></audio>
+        <audio class="confetti-audio" src="../sounds/confetti.mp3"></audio>
+        <audio class="crowd-audio" src="../sounds/crowd.mp3"></audio>
+        <audio class="win-audio" src="../sounds/win.mp3"></audio>
+        <audio class="lose-audio" src="../sounds/lose.mp3"></audio>
+        <audio class="click-audio" src="../sounds/click.wav"></audio>
+
+        <img class="cross" src="../imgs/cross.png" alt="cross">
+        <img class="circle" src="../imgs/circle.png" alt="circle">
+    </div>
+
+    <script src="../js/game.js"></script>
+</body>
+
+</html>

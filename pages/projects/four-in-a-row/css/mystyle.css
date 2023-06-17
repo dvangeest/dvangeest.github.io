@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'distritoregular';
+    src: url('../fonts/distrito/distrito-caps-webfont.woff2') format('woff2'),
+        url('../fonts/distrito/distrito-caps-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kollektifregular';
+    src: url('../fonts/kollektif/kollektif-webfont.woff2') format('woff2'),
+        url('../fonts/kollektif/kollektif-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'intro';
+    src: url('../fonts/intro/intro-trial-bdalt-webfont.woff2') format('woff2'),
+        url('../fonts/intro/intro-trial-bdalt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+h2 {
+    color: white;
+    font-size: 2.5vw;
+    font-family: 'intro', Courier, monospace;
+}
+
+h3 {
+    color: white;
+    font-size: 1.5vw;
+    font-family: 'kollektifregular', Courier, monospace;
+}
+
+p {
+    color: white;
+    font-size: 1.2vw;
+    font-family: 'kollektifregular', Courier, monospace;
+}
+
+body {
+    background-color: #F4A261;
+}
+
+img {
+    margin: auto;
+    height: 3vw;
+    width: 3vw;
+}
+
+.aqua {
+    background-color: #2A9D8F;
+}
+
+.darkblue {
+    background-color: #264653;
+}
+
+.yellow {
+    background-color: #E9C46A;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 2vw;
+    bottom: 0;
+}
+
+.board-container {
+    width: 65vw;
+    height: 70vh;
+
+    position: absolute;
+    top: 7.4vw;
+}
+
+.board {
+    padding: 1vw;
+    width: 50vw;
+    height: 65vh;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.board>div {
+    background: rgba(255, 255, 255, 0);
+    gap: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.board>div>div {
+    height: 3.8vw;
+    width: 3.8vw;
+    background-color: #264653;
+    border-radius: 15%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .3s;
+}
+
+.cross,
+.circle {
+    display: none;
+    opacity: .5;
+}
+
+.title-background {
+    width: 70vw;
+    height: 8vw;
+
+    z-index: 1;
+}
+
+.title-container {
+    width: 45vw;
+    height: 6.5vw;
+
+    font-size: 300;
+
+    text-align: center;
+}
+
+.rounded-corner {
+    border-radius: 7.5px;
+}
+
+.player-container {
+    position: absolute;
+    top: 86vh;
+    width: 100vw;
+    height: 5vh;
+}
+
+.player-card {
+    height: inherit;
+    width: 10vw;
+    margin: 17vw;
+
+    text-align: center;
+}
+
+.arrow-container {
+    width: 100%;
+}
+
+.right {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    left: 52.5vw;
+}
+
+.left {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.enter-name,
+.play-btn {
+    margin: .25vh;
+    width: 17.5vw;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+.enter-name {
+    height: 5vh;
+}
+
+.play-btn {
+    height: 7vh;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.btn-container {
+    position: absolute;
+    top: 52vh;
+}
+
+.pop-up {
+    width: 15vw;
+    height: 45vh;
+
+    position: absolute;
+    background-color: #F4A261;
+    border: 7.5px solid #E9C46A;
+
+    text-align: center;
+}
+
+.pop-up>img {
+    margin-top: 2vw;
+
+    display: block;
+
+    width: 60%;
+    height: 9vw;
+    aspect-ratio: auto;
+}
+
+.pop-up>h3 {
+    margin-top: 1vw;
+}
+
+.play-again,
+.exit-menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    width: 80%;
+}
+
+.play-again {
+    top: 70%;
+}
+
+.exit-menu {
+    top: 85%;
+}
+
+.pop-up-container {
+    background-color: rgba(0, 0, 0, .5);
+    position:fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+
+    height: 100vh;
+    opacity: 0;
+    z-index: -1;
+
+    transition: all .3s;
+}
+
+::placeholder {
+    color: rgb(222, 221, 221);
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: rgb(222, 221, 221);
+}
+
+::-ms-input-placeholder {
+    color: rgb(222, 221, 221);
+}
+
+.arrow {
+    width: 12vw;
+    height: 3vw;
+}
+
+.right {
+    transform: rotate(180deg);
+}
